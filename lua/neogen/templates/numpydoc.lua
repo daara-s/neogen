@@ -35,6 +35,11 @@ return {
         { after_each = "    $1", type = { "func" } },
     },
     { i.ClassAttribute, "%s : $1", { before_first_item = { "", "Attributes", "----------" } } },
+    {
+        { i.Parameter, i.Type },
+        "%s : %s",
+        { after_each = "    $1", required = i.Tparam, type = { "class" } },
+    },
     { i.HasReturn, "", { type = { "func" } } },
     { i.HasReturn, "Returns", { type = { "func" } } },
     { i.HasReturn, "-------", { type = { "func" } } },
