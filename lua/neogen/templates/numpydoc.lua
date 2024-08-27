@@ -36,7 +36,7 @@ return {
     },
     { i.ClassAttribute, "%s : $1", { before_first_item = { "", "Attributes", "----------" } } },
     {
-        { i.Parameter, i.Type },
+        { i.classAttribute, i.Type },
         "%s : %s",
         { after_each = "    $1", required = i.Tparam, type = { "class" } },
     },
